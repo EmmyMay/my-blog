@@ -4,7 +4,7 @@
   <Layout>
     <v-container fluid>
       <div class="home">
-        <v-row v-show="$vuetify.breakpoint.xsOnly" id="card-wrapper" class="d-flex">
+        <v-row v-if="$vuetify.breakpoint.xsOnly" id="card-wrapper" class="d-flex">
           <v-form>
             <v-text-field id="id" name="name" label="label" />
           </v-form>
@@ -33,7 +33,7 @@
             </v-hover>
           </v-col>
         </v-row>
-        <v-row v-show="$vuetify.breakpoint.smAndUp" id="d-box">
+        <v-row v-if="$vuetify.breakpoint.smAndUp" id="d-box">
           <v-col class="display" cols="10">
             <v-card
               :key="key"
@@ -62,7 +62,7 @@
         <!--  -->
         <!--  -->
 
-        <v-row v-show="$vuetify.breakpoint.smAndUp">
+        <v-row v-if="$vuetify.breakpoint.smAndUp">
           <v-col v-for="detail in details" :key="detail.id" lg="4" @mouseover="log(detail)">
             <v-hover v-slot:default="{ hover }">
               <v-card
