@@ -2,7 +2,7 @@
 <template>
   <v-app style="background-image: linear-gradient(to right, #8C857B, #F2EBDF);">
     <v-app-bar
-      v-if="$vuetify.breakpoint.xsOnly"
+      v-show="$vuetify.breakpoint.xsOnly"
       id="xs-bar"
       collapse-on-scroll
       app
@@ -21,7 +21,7 @@
     <!--  -->
     <v-app-bar
       id="deskbar"
-      v-if="$vuetify.breakpoint.smAndUp"
+      v-show="$vuetify.breakpoint.smAndUp"
       hide-on-scroll
       app
       color="#262523"
