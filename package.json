@@ -8,8 +8,13 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.6.0",
     "@mdi/font": "^4.5.95",
     "gridsome": "^0.7.9",
+    "gridsome-plugin-netlify-cms": "^1.0.9",
+    "netlify-cms": "^2.10.50",
+    "v-lazy-image": "^1.4.0",
     "vuetify": "^2.1.9"
   },
   "devDependencies": {
